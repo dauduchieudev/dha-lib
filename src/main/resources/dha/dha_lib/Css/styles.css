@@ -1,0 +1,10 @@
+.touchable-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-background-radius: 30;
+}
+
+.touchable-anchor-pane {
+    -fx-background-color: transparent;
+    -fx-background-radius: 30;
+}

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!--<?import dha.dhalib.Controllers.Components.TouchableField?>-->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1050.0" style="-fx-padding: 0; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dha.dha_lib.Controllers.IndexTabs.HomeController">
+    <children>
+        <Button graphicTextGap="0.0" mnemonicParsing="false" prefHeight="700.0" prefWidth="1050.0" styleClass="touchable-button" stylesheets="@../../Css/styles.css">
+            <graphic>
+                <AnchorPane prefHeight="700.0" prefWidth="1050.0" styleClass="touchable-anchor-pane" stylesheets="@../../Css/styles.css">
+                    <children>
+                        <AnchorPane prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: #faf9fd; -fx-background-radius: 30 0 0 30;">
+                            <children>
+                                <AnchorPane fx:id="bookListView" layoutX="10.0" layoutY="100.0" prefHeight="590.0" prefWidth="680.0" style="-fx-background-color: transparent;" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="700.0" prefHeight="700.0" prefWidth="350.0" style="-fx-background-color: #ffe9e9; -fx-background-radius: 0 30 30 0;">
+                            <children>
+                                <ScrollPane fitToWidth="true" layoutX="10.0" layoutY="80.0" prefHeight="610.0" prefWidth="330.0" style="-fx-background-color: #ffe9e9;">
+                                    <content>
+                                        <VBox prefHeight="608.0" prefWidth="328.0" style="-fx-background-color: #ffe9e9;">
+                                            <children>
+                                                <VBox alignment="CENTER" prefHeight="276.0" prefWidth="328.0">
+                                                    <children>
+                                                        <ImageView fx:id="bookImageView" fitHeight="230.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../../Images/book_loader.jpg" />
+                                                            </image>
+                                                            <effect>
+                                                                <DropShadow offsetX="3.0" offsetY="3.0" />
+                                                            </effect>
+                                                        </ImageView>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="TOP_CENTER" prefHeight="56.0" prefWidth="328.0">
+                                                    <children>
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cam nang pho chong dich covid 2019 - 2020" textAlignment="CENTER" wrappingWidth="290.35809326171875">
+                                                            <font>
+                                                                <Font name="System Bold" size="20.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="287.0" prefHeight="28.0" prefWidth="328.0">
+                                                    <children>
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="_Tran Anh Duy_" textAlignment="CENTER" wrappingWidth="280.0">
+                                                            <font>
+                                                                <Font name="System Bold" size="15.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="374.0" prefHeight="0.0" prefWidth="328.0">
+                                                    <children>
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled ... Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled ..." wrappingWidth="280.0" />
+                                                    </children>
+                                                </VBox>
+                                                <VBox prefHeight="52.0" prefWidth="314.0">
+                                                    <children>
+                                                        <AnchorPane prefHeight="90.0" prefWidth="314.0">
+                                                            <children>
+                                                                <VBox alignment="CENTER" prefHeight="65.0" prefWidth="312.0">
+                                                                    <children>
+                                                                        <AnchorPane prefHeight="39.0" prefWidth="230.0">
+                                                                            <children>
+                                                                                <VBox alignment="CENTER_LEFT" layoutX="57.0" prefHeight="37.0" prefWidth="200.0">
+                                                                                    <children>
+                                                                                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8ff1f" height="35.0" stroke="TRANSPARENT" strokeType="INSIDE" width="139.0" />
+                                                                                    </children>
+                                                                                </VBox>
+                                                                            </children>
+                                                                        </AnchorPane>
+                                                                    </children>
+                                                                </VBox>
+                                                                <VBox alignment="CENTER" prefHeight="65.0" prefWidth="312.0">
+                                                                    <children>
+                                                                        <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                                            <image>
+                                                                                <Image url="@../../Images/stars.png" />
+                                                                            </image>
+                                                                        </ImageView>
+                                                                    </children>
+                                                                </VBox>
+                                                            </children>
+                                                        </AnchorPane>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" prefHeight="57.0" prefWidth="328.0">
+                                                    <children>
+                                                        <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="150.0" style="-fx-background-color: lightblue; -fx-background-radius: 10;" text="Borrow now">
+                                                            <font>
+                                                                <Font name="System Bold" size="15.0" />
+                                                            </font>
+                                                        </Button>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </VBox>
+                                    </content>
+                                </ScrollPane>
+                            </children>
+                        </AnchorPane>
+                        <TextField layoutX="50.0" layoutY="21.0" prefHeight="50.0" prefWidth="585.0" promptText="Search documents..." style="-fx-border-image-width: 0; -fx-border-color: transparent; -fx-background-color: #ffffff; -fx-background-radius: 20; -fx-padding: 0 20;">
+                            <effect>
+                                <DropShadow height="23.93" offsetX="3.0" offsetY="3.0" radius="11.469999999999999" spread="0.29" width="23.95">
+                                    <color>
+                                        <Color red="0.6899999976158142" green="0.6693000197410583" blue="0.6693000197410583" opacity="0.800000011920929" />
+                                    </color>
+                                </DropShadow>
+                            </effect>
+                        </TextField>
+                        <Button layoutX="675.0" layoutY="21.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #fff; -fx-background-radius: 15;">
+                            <effect>
+                                <DropShadow offsetX="3.0" offsetY="3.0" spread="0.38">
+                                    <color>
+                                        <Color red="0.7894737124443054" green="0.7638888955116272" blue="0.7638888955116272" />
+                                    </color>
+                                </DropShadow>
+                            </effect>
+                            <graphic>
+                                <ImageView fitHeight="27.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../Images/search.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button layoutX="967.0" layoutY="21.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #fff; -fx-background-radius: 15; -fx-padding: 2;">
+                            <effect>
+                                <DropShadow offsetX="3.0" offsetY="3.0" spread="0.38">
+                                    <color>
+                                        <Color red="0.7894737124443054" green="0.7638888955116272" blue="0.7638888955116272" />
+                                    </color>
+                                </DropShadow>
+                            </effect>
+                            <graphic>
+                                <BorderPane prefHeight="50.0" prefWidth="44.0">
+                                    <center>
+                                        <ImageView fitHeight="41.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                            <image>
+                                                <Image url="@../../Images/test_avt.png" />
+                                            </image>
+                                        </ImageView>
+                                    </center>
+                                </BorderPane>
+                            </graphic>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </graphic>
+        </Button>
+    </children>
+</AnchorPane>
